@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS text_table (
+    id SERIAL PRIMARY KEY,
+    text VARCHAR
+);
