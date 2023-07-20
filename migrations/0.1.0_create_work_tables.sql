@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS works (
     id SERIAL PRIMARY KEY,
-    title VARCHAR NOT NULL,
-    abbrev VARCHAR NOT NULL,
+    title VARCHAR NOT NULL UNIQUE,
+    abbrev VARCHAR NOT NULL UNIQUE,
     aa_volume INTEGER NOT NULL
 );
 
