@@ -1,6 +1,14 @@
 ## Docker setup
 
-Build the postgres container with `docker build -f ./deployment/Dockerfile -t kant-search-database .`. Start the container with `docker run --rm -e POSTGRES_PASSWORD=postgres -p 5432:5432 kant-search-database`
+Build the postgres container with `docker build -f ./deployment/Dockerfile -t kant-search-database .`. Start the container with the following command (replace 'volumes' with the path to your desired mounting point):
+
+```
+docker run --rm \
+    -v volumes:/var/lib/postgresql/data
+    -e POSTGRES_PASSWORD=postgres \
+    -p 5432:5432 \
+    kant-search-database
+```
 
 ## Versioning
 
