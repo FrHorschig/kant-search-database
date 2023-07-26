@@ -4,7 +4,7 @@ Build the postgres container with `docker build -f ./deployment/Dockerfile -t ka
 
 ```
 docker run --rm \
-    -v volumes:/var/lib/postgresql/data
+    -v "${pwd}"/volumes:/var/lib/postgresql/data \
     -e POSTGRES_PASSWORD=postgres \
     -p 5432:5432 \
     kant-search-database
