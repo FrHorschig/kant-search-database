@@ -5,7 +5,7 @@ ADD COLUMN reindex boolean DEFAULT false;
 CREATE OR REPLACE FUNCTION paragraphs_search_trigger() RETURNS trigger AS $$
 begin
     IF new.reindex THEN
-        new.search := to_tsvector('german', new.body);
+        new.search := to_tsvector('german', new.text);
         new.reindex := false;
     END IF;
     return new;
@@ -21,7 +21,7 @@ ADD COLUMN reindex boolean DEFAULT false;
 CREATE OR REPLACE FUNCTION sentences_search_trigger() RETURNS trigger AS $$
 begin
     IF new.reindex THEN
-        new.search := to_tsvector('german', new.body);
+        new.search := to_tsvector('german', new.text);
         new.reindex := false;
     END IF;
     return new;
