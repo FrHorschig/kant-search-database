@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS works (
     title VARCHAR NOT NULL UNIQUE,
     abbreviation VARCHAR,
     volume INTEGER NOT NULL,
-    ordinal INTEGER,
+    ordinal INTEGER NOT NULL,
     year INTEGER
 );
 
