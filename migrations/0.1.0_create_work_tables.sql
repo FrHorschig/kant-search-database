@@ -1,9 +1,10 @@
 CREATE TABLE IF NOT EXISTS works (
     id SERIAL PRIMARY KEY,
     title VARCHAR NOT NULL UNIQUE,
-    abbrev VARCHAR NOT NULL UNIQUE,
-    aa_volume INTEGER NOT NULL,
-    year INTEGER NOT NULL
+    abbreviation VARCHAR UNIQUE,
+    volume INTEGER NOT NULL,
+    ordinal INTEGER,
+    year INTEGER
 );
 
 CREATE TABLE IF NOT EXISTS paragraphs (
@@ -18,7 +19,7 @@ CREATE TABLE IF NOT EXISTS sentences (
     id SERIAL PRIMARY KEY,
     text VARCHAR NOT NULL,
     paragraph_id INTEGER NOT NULL,
-    FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id),
     work_id INTEGER NOT NULL,
+    FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id),
     FOREIGN KEY (work_id) REFERENCES works(id)
 );
