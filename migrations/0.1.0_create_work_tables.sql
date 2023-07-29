@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS works (
 
 CREATE TABLE IF NOT EXISTS paragraphs (
     id SERIAL PRIMARY KEY,
-    text VARCHAR NOT NULL,
+    content TEXT NOT NULL,
     pages INTEGER[] NOT NULL,
     work_id INTEGER NOT NULL,
     FOREIGN KEY (work_id) REFERENCES works(id)
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS paragraphs (
 
 CREATE TABLE IF NOT EXISTS sentences (
     id SERIAL PRIMARY KEY,
-    text VARCHAR NOT NULL,
+    content TEXT NOT NULL,
     paragraph_id INTEGER NOT NULL,
     work_id INTEGER NOT NULL,
     FOREIGN KEY (paragraph_id) REFERENCES paragraphs(id),
