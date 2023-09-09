@@ -1,9 +1,16 @@
-CREATE TABLE IF NOT EXISTS work_metadata (
+CREATE TABLE IF NOT EXISTS volumes (
+    id VARCHAR(2) PRIMARY KEY,
+    title VARCHAR NOT NULL UNIQUE,
+    section VARCHAR(1) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS worksk (
     id VARCHAR PRIMARY KEY,
     title VARCHAR NOT NULL UNIQUE,
-    volume INTEGER NOT NULL,
+    volume_id VARCHAR(2) NOT NULL,
     ordinal INTEGER NOT NULL,
     year INTEGER
+    FOREIGN KEY (volume_id) REFERENCES volumes(id)
 );
 
 CREATE TABLE IF NOT EXISTS paragraphs (
