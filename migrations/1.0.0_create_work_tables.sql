@@ -1,7 +1,6 @@
-CREATE TABLE IF NOT EXISTS works (
-    id SERIAL PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS work_metadata (
+    id VARCHAR PRIMARY KEY,
     title VARCHAR NOT NULL UNIQUE,
-    abbreviation VARCHAR,
     volume INTEGER NOT NULL,
     ordinal INTEGER NOT NULL,
     year INTEGER
