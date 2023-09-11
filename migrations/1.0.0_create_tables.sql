@@ -1,15 +1,16 @@
 CREATE TABLE IF NOT EXISTS volumes (
-    id VARCHAR(2) PRIMARY KEY,
-    title VARCHAR NOT NULL UNIQUE,
-    section VARCHAR(1) NOT NULL
+    id INTEGER PRIMARY KEY,
+    title VARCHAR NOT NULL,
+    section INTEGER NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS worksk (
-    id VARCHAR PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS works (
+    id SERIAL PRIMARY KEY,
     title VARCHAR NOT NULL UNIQUE,
-    volume_id VARCHAR(2) NOT NULL,
+    abbreviation VARCHAR NOT NULL,
+    volume_id INTEGER[] NOT NULL,
     ordinal INTEGER NOT NULL,
-    year INTEGER
+    year VARCHAR,
     FOREIGN KEY (volume_id) REFERENCES volumes(id)
 );
 
