@@ -7,10 +7,10 @@ CREATE TABLE IF NOT EXISTS volumes (
 CREATE TABLE IF NOT EXISTS works (
     id SERIAL PRIMARY KEY,
     title VARCHAR NOT NULL UNIQUE,
-    abbreviation VARCHAR NOT NULL,
-    volume_id INTEGER[] NOT NULL,
+    abbreviation VARCHAR,
     ordinal INTEGER NOT NULL,
     year VARCHAR,
+    volume_id INTEGER[] NOT NULL,
     FOREIGN KEY (volume_id) REFERENCES volumes(id)
 );
 
