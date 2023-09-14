@@ -4,7 +4,7 @@ Install and run `make` to build the docker container with the command provided i
 
 ```
 docker run --rm \
-    -u "$USER"
+    -u "$USER" \
     -v "$(pwd)"/volumes:/var/lib/postgresql/data \
     -e POSTGRES_PASSWORD=postgres \
     -p 5432:5432 \
