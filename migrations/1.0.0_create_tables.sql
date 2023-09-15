@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS works (
     abbreviation VARCHAR,
     ordinal INTEGER NOT NULL,
     year VARCHAR,
-    volume_id INTEGER[] NOT NULL,
+    volume_id INTEGER NOT NULL,
     FOREIGN KEY (volume_id) REFERENCES volumes(id)
 );
 
