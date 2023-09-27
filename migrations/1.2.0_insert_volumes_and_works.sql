@@ -70,17 +70,17 @@ INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES
 ('Von den verschiedenen Racen der Menschen', 'VvRM', 2, 16, '1775'),
 ('Aufsätze, das Philanthropin betreffend', 'AP', 2, 17, '1776-1777');
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Kritik der reinen Vernunft A', 'A', 4, 0, '1781'),
 ('Prolegomena', 'Prol', 4, 1, '1783'),
 ('Grundlegung zur Metaphysik der Sitten', 'GMS', 4, 2, '1785'),
 ('Metaphysische Anfangsgründe der Naturwissenschaft', 'MAN', 4, 3, '1786');
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Kritik der praktischen Vernunft', 'KpV', 5, 0, '1788'),
 ('Kritik der Urtheilskraft', 'KU', 5, 1, '1790');
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Die Religion innerhalb der Grenzen der bloßen Vernunft', 'RGV', 6, 0, '1793'),
 ('Die Metaphysik der Sitten', 'MS', 6, 1, '1797');
 
@@ -88,7 +88,7 @@ INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES
 ('Der Streit der Facultäten', 'SF', 7, 0, '1798'),
 ('Anthropologie in pragmatischer Hinsicht', 'Anth', 7, 1, '1798');
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Anzeige des Lambert''schen Briefwechsels', NULL, 8, 0, '1782'),
 ('Nachricht an Ärzte', NULL, 8, 1, '1782'),
 ('Recension von Schulz''s Versuch einer Anleitung zur Sittenlehre für alle Menschen, ohne Unterschied der Religion, nebst einem Anhange von den Todesstrafen', 'RezSchulz', 8, 2, '1783/90'),
@@ -121,22 +121,22 @@ INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VA
 ('Anhang (Band 8)', NULL, 8, 29, NULL),
 ('Kraus'' Recension von Ulrich''s Eleutheriologie', 'RezUlrich', 8, 30, '1788');
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Logik', 'Log', 9, 0, '1800'),
 ('Physische Geographie', 'PG', 9, 1, '1802'),
 ('Pädagogik', 'Päd', 9, 2, '1803');
 
 -- Abteilung II: Briefwechsel --------------------------------------------------
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Briefe 001-342', 'Br', 10, 0, '1747-1788');
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Briefe 343-647', 'Br', 11, 0, '1789-1794');
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Briefe 648-903', 'Br', 12, 0, '1795-1803');
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Einleitung in die Abteilung: Kant''s Briefwechsel', 'Br', 13, 0, NULL),
 ('Anmerkungen zu Band 10', 'Br', 13, 1, NULL),
 ('Anmerkungen zu Band 11', 'Br', 13, 2, NULL),
@@ -146,14 +146,14 @@ INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VA
 ('Register zu: Kant', 'Br', 13, 6, NULL);
 
 -- Abteilung III: Handschriftlicher Nachlass -----------------------------------
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Einleitung in die Abtheilung des handschriftlichen Nachlasses', 'HN', 14, 0, NULL),
 ('Reflexionen zur Mathematik, Nr. 0001-0019', 'Refl', 14, 1, NULL),
 ('Reflexionen zur Physik und Chemie, Nr. 0020-0082', 'Refl', 14, 2, NULL),
 ('Reflexionen zur physischen Geographie, Nr. 0083-0110', 'Refl', 14, 3, NULL),
 ('Berichtigungen und Nachträge zu Band 14', 'HN', 14, 4, NULL);
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Erläuterungen zur „Psychologia empirica“ in A. G. Baumgartens „Metaphysica“, Nr. 0111-0158', 'HN', 15, 0, '1757'),
 ('Reflexionen zur Anthropologie, Nr. 0158a-1481', 'Refl', 15, 1, NULL),
 ('Entwürfe zu dem Colleg über Anthropologie aus den 70er und 80er Jahren, Nr. 1482-1524', 'HN', 15, 2, '1770-1789'),
@@ -161,11 +161,11 @@ INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VA
 ('Zweiter Anhang: Medicin, Nr. 1526-1561', 'HN', 15, 4, NULL),
 ('Berichtigungen und Nachträge zu Band 15', 'HN', 15, 5, NULL);
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Reflexionen zu G. Fr. Meiers „Auszug aus der Vernunftlehre“, Nr. 1562-3488', 'Refl', 16, 0, '1752'),
 ('Berichtigungen und Nachträge', 'HN', 16, 1, NULL);
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Erläuterungen zu A. G. Baumgartens „Metaphysica“, Nr. 3489-3702', 'HN', 17, 0, '1757'),
 ('Reflexionen zur Metaphysik, Nr. 3703-4846', 'Refl', 17, 1, '1753-1776'),
 ('Berichtigungen und Nachträge zu Band 17', 'HN', 17, 2, NULL);
@@ -176,7 +176,7 @@ INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES
 ('Reflexionen zur Metaphysik, Nr. 6311-6455', 'Refl', 18, 2, '1790-1804'),
 ('Berichtigungen und Nachträge zu Band 18', 'HN', 18, 3, NULL);
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Erläuterungen Kants zu A. G. Baumgartens „Initia philosophiae practicae primae“, Nr. 6456–6576', 'HN', 19, 0, '1760'),
 ('Reflexionen zur Moralphilosophie, Nr. 6577–7322', 'Refl', 19, 1, NULL),
 ('Erläuterungen Kants zu G. Achenwalls „Iuris naturalis pars posterior“, Nr. 7323–7520', 'HN', 19, 2, '1763'),
@@ -184,7 +184,7 @@ INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VA
 ('Reflexionen zur Religionsphilosophie, Nr. 8081–8112', 'Refl', 19, 4, NULL),
 ('Berichtigungen und Nachträge zu Band 19', 'HN', 19, 5, NULL);
 
-INSERT INTO works(title, title_short, abbreviation, volume_id, ordinal, year) VALUES 
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Bemerkungen zu den Beobachtungen über das Gefühl des Schönen und Erhabenen', 'HN', 20, 0, NULL),
 ('Lose Blätter zu den Beobachtungen über das Gefühl des Schönen und Erhabenen', 'HN', 20, 1, NULL),
 ('Erste Einleitung in die Kritik der Urteilskraft', 'HN', 20, 2, NULL),
