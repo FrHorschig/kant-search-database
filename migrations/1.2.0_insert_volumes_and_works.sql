@@ -71,7 +71,10 @@ INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES
 ('Aufsätze, das Philanthropin betreffend', 'AP', 2, 17, '1776-1777');
 
 INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
-('Kritik der reinen Vernunft A', 'A', 4, 0, '1781'),
+('Kritik der reinen Vernunft 2. Aufl.', 'KrV B', 3, 0, '1781');
+
+INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
+('Kritik der reinen Vernunft 1. Aufl.', 'KrV A', 4, 0, '1781'),
 ('Prolegomena', 'Prol', 4, 1, '1783'),
 ('Grundlegung zur Metaphysik der Sitten', 'GMS', 4, 2, '1785'),
 ('Metaphysische Anfangsgründe der Naturwissenschaft', 'MAN', 4, 3, '1786');
