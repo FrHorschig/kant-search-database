@@ -19,6 +19,8 @@ CREATE TABLE IF NOT EXISTS paragraphs (
     content TEXT NOT NULL,
     pages INTEGER[] NOT NULL,
     work_id INTEGER NOT NULL,
+    heading_level INTEGER,
+    footnote_name VARCHAR,
     FOREIGN KEY (work_id) REFERENCES works(id)
 );
 
