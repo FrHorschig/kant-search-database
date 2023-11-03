@@ -23,7 +23,7 @@ jobs:
         run: |
           docker build \
             -f ./deployment/Dockerfile \
-            -t ${{ env.REPO_NAME }} \
+            -t ghcr.io/${{ env.OWNER }}/${{ env.REPO_NAME }} \
             .
 
       - name: login to ghcr
@@ -34,10 +34,9 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: publish docker image
         run: |
-          img=${{ env.REPO_NAME }}
+          img=ghcr.io/${{ env.OWNER }}/${{ env.REPO_NAME }}
           version=${{ env.VERSION }}
-          registry=ghcr.io/${{ env.OWNER }}/$img
-          docker tag  $img $registry:$version
-          docker tag  $img $registry:latest
-          docker push $registry/$img:$version
-          docker push $registry:latest
+          docker tag  $img $img:$version
+          docker tag  $img $img:latest
+          docker push $img:$version
+          docker push $img:latest
