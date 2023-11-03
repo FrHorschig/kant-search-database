@@ -28,5 +28,6 @@ jobs:
           version=$(.github/workflows/extract_version.sh migrations)
           owner_lower=$(echo "${{ env.OWNER }}" | tr '[:upper:]' '[:lower:]')
           docker tag ${{ env.REPO_NAME }} ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:v"$version"
-          docker tag ${{ env.REPO_NAME }} ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:latest
           docker push ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:v"$version"
+          docker tag ${{ env.REPO_NAME }}:v"$version" ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:latest
+          docker push ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:latest
