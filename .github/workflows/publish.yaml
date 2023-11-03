@@ -18,7 +18,7 @@ jobs:
       - name: adjust env variables
         run: |
           echo "OWNER=$(echo $OWNER | awk '{print tolower($0)}')" >> $GITHUB_ENV
-          echo "VERSION=$(.github/workflows/extract_version.sh migrations) >> $GITHUB_ENV
+          echo "VERSION=$(.github/workflows/extract_version.sh migrations)" >> $GITHUB_ENV
       - name: build Docker image
         run: |
           docker build \
