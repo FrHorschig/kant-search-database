@@ -10,13 +10,14 @@ jobs:
     if: github.event.pull_request.merged
     runs-on: ubuntu-latest
     env:
-      REPO_NAME: ${{ github.event.repository.name }}
       OWNER: ${{ github.repository_owner }}
+      REPO_NAME: ${{ github.event.repository.name }}
     steps:
       - name: checkout
         uses: actions/checkout@v4
       - name: make owner lowercase
-        run: echo "${{ env.OWNER }}" | awk '{print tolower($0)}' >> $GITHUB_ENV
+        run: |
+          echo "OWNER=$(echo $OWNER | awk '{print tolower($0)}')" >> $GITHUB_ENV
       - name: build Docker image
         run: |
           docker build \
