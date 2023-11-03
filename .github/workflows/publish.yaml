@@ -23,7 +23,7 @@ jobs:
         run: |
           docker build \
             -f ./deployment/Dockerfile \
-            -t ${{ env.REPO_NAME }}${{ env.VERSION }} \
+            -t ${{ env.REPO_NAME }}:${{ env.VERSION }} \
             .
 
       - name: login to ghcr
