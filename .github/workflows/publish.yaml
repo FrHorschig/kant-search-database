@@ -25,7 +25,8 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u $ --password-stdin
       - name: publish docker image
         run: |
-          v=$(.github/workflows/extract_version.sh migrations)
+          version=$(.github/workflows/extract_version.sh migrations)
           owner_lower=$(echo "${{ env.OWNER }}" | tr '[:upper:]' '[:lower:]')
-          docker tag ${{ env.REPO_NAME }} ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:v"$v"
-          docker push ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:v"$v"
+          docker tag ${{ env.REPO_NAME }} ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:v"$version"
+          docker tag ${{ env.REPO_NAME }} ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:latest
+          docker push ghcr.io/"$owner_lower"/${{ env.REPO_NAME }}:v"$version"
