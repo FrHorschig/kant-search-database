@@ -27,14 +27,6 @@ INSERT INTO volumes(id, title, section) VALUES
 (22, 'Opus postumum (Convolut VII bis XIII)', 3),
 (23, 'Vorarbeiten und Nachträge, Einleitung und Erläuterungen', 3);
 
--- INSERT INTO volumes(id, title, section) VALUES 
--- (24, 'Vorlesungen über Logik', 4),
--- (25, 'Vorlesungen über Anthropologie', 4),
--- (26, 'Vorlesungen über Physische Geographie', 4),
--- (27, 'Vorlesungen über Moralphilosophie', 4),
--- (28, 'Vorlesungen über Metaphysik und Rationaltheologie', 4),
--- (29, 'Kleinere Vorlesungen (Enzyklopädie, Mathematik, Physik) und Ergänzungen', 4);
-
 -- Abteilung I: Werke ----------------------------------------------------------
 INSERT INTO works(title, abbreviation, volume_id, ordinal, year) VALUES 
 ('Gedanken von der wahren Schätzung der lebendigen Kräfte und Beurtheilung der Beweise, deren sich Herr von Leibniz und andere Mechaniker in dieser Streitsache bedient haben, nebst einigen vorhergehenden Betrachtungen, welche die Kraft der Körper überhaupt betreffen', 'GSK', 1, 0, '1746/49'),
