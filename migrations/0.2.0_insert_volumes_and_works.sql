@@ -28,7 +28,7 @@ INSERT INTO volumes(id, section) VALUES
 (23, 3);
 
 -- Abteilung I: Werke ----------------------------------------------------------
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('GSK', 'GSK', 1, 0, '1746/49'),
 ('UFE', 'UFE', 1, 1, '1754'),
 ('FE', 'FE', 1, 2, '1754'),
@@ -42,7 +42,7 @@ INSERT INTO works(code, volume_id, ordinal, year) VALUES
 ('TW', 'TW', 1, 10, '1756'),
 ('INTRO_1', NULL, 1, 11, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('EACG', 'EACG', 2, 0, '1757'),
 ('NLBR', 'NLBR', 2, 1, '1758'),
 ('VBO', 'VBO', 2, 2, '1759'),
@@ -62,28 +62,28 @@ INSERT INTO works(code, volume_id, ordinal, year) VALUES
 ('VVRM', 'VvRM', 2, 16, '1775'),
 ('AP', 'AP', 2, 17, '1776-1777');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('KRV_B', 'B', 3, 0, '1787');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('KRV_A', 'A', 4, 0, '1781'),
 ('PROL', 'Prol', 4, 1, '1783'),
 ('GMS', 'GMS', 4, 2, '1785'),
 ('MAN', 'MAN', 4, 3, '1786');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('KPV', 'KpV', 5, 0, '1788'),
 ('KU', 'KU', 5, 1, '1790');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('RGV', 'RGV', 6, 0, '1793'),
 ('MS', 'MS', 6, 1, '1797');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('SF', 'SF', 7, 0, '1798'),
 ('ANTH', 'Anth', 7, 1, '1798');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('LAMBERT_BRIEFWECHSEL', NULL, 8, 0, '1782'),
 ('NACHRICHT_AERZTE', NULL, 8, 1, '1782'),
 ('REZ_SCHULZ', 'RezSchulz', 8, 2, '1783/90'),
@@ -116,22 +116,22 @@ INSERT INTO works(code, volume_id, ordinal, year) VALUES
 ('ANHANG_8', NULL, 8, 29, NULL),
 ('REZ_ULRICH', 'RezUlrich', 8, 30, '1788');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('LOG', 'Log', 9, 0, '1800'),
 ('PG', 'PG', 9, 1, '1802'),
 ('PAED', 'Päd', 9, 2, '1803');
 
 -- Abteilung II: Briefwechsel --------------------------------------------------
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('BR_1', 'Br', 10, 0, '1747-1788');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('BR_2', 'Br', 11, 0, '1789-1794');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('BR_3', 'Br', 12, 0, '1795-1803');
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('INTRO_BR', 'Br', 13, 0, NULL),
 ('REMARKS_VOL_10', 'Br', 13, 1, NULL),
 ('REMARKS_VOL_11', 'Br', 13, 2, NULL),
@@ -141,14 +141,14 @@ INSERT INTO works(code, volume_id, ordinal, year) VALUES
 ('REGISTER_KANT', 'Br', 13, 6, NULL);
 
 -- Abteilung III: Handschriftlicher Nachlass -----------------------------------
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('INTRO_HN', 'HN', 14, 0, NULL),
 ('REFL_MATH', 'Refl', 14, 1, NULL),
 ('REFL_PH_CH', 'Refl', 14, 2, NULL),
 ('REFL_GEO', 'Refl', 14, 3, NULL),
 ('NACHTRAG_HN', 'HN', 14, 4, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('EXPL_PSYCH_EMP', 'HN', 15, 0, '1757'),
 ('REFL_ANTH', 'Refl', 15, 1, NULL),
 ('ENTWURF_ANTH', 'HN', 15, 2, '1770-1789'),
@@ -156,22 +156,22 @@ INSERT INTO works(code, volume_id, ordinal, year) VALUES
 ('ANHANG_MEDIZIN', 'HN', 15, 4, NULL),
 ('NACHTRAG_15', 'HN', 15, 5, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('REFL_MEIER', 'Refl', 16, 0, '1752'),
 ('NACHTRAG_16', 'HN', 16, 1, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('EXPL_METAPHYSICA', 'HN', 17, 0, '1757'),
 ('REFL_METAPHYSIK', 'Refl', 17, 1, '1753-1776'),
 ('NACHTRAG_17', 'HN', 17, 2, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('REFL_METAPHYSIK_2', 'Refl', 18, 0, '1776-1789'),
 ('BEM_EBERHARD', 'HN', 18, 1, '1781'),
 ('REFL_METAPHYSIK_3', 'Refl', 18, 2, '1790-1804'),
 ('NACHTRAG_18', 'HN', 18, 3, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('EXPL_INIT_PHIL', 'HN', 19, 0, '1760'),
 ('REFL_ETHIK', 'Refl', 19, 1, NULL),
 ('EXPL_ACHENWALL', 'HN', 19, 2, '1763'),
@@ -179,7 +179,7 @@ INSERT INTO works(code, volume_id, ordinal, year) VALUES
 ('REFL_REL_PHIL', 'Refl', 19, 4, NULL),
 ('NACHTRAG_19', 'HN', 19, 5, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('EXPL_GSE', 'HN', 20, 0, NULL),
 ('LOSE_BL_GSE', 'HN', 20, 1, NULL),
 ('INTRO_KU', 'HN', 20, 2, NULL),
@@ -193,14 +193,14 @@ INSERT INTO works(code, volume_id, ordinal, year) VALUES
 ('INTRO_20', 'HN', 20, 10, NULL),
 ('EXPL_20', 'HN', 20, 11, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('OP_1', 'OP', 21, 0, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('OP_2', 'OP', 22, 0, NULL),
 ('OP_ANHANG', 'OP', 22, 1, NULL);
 
-INSERT INTO works(code, volume_id, ordinal, year) VALUES 
+INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
 ('FRAG_PREISFRAGE', 'OP', 23, 0, NULL),
 ('ENTWURF_NATURGESCHICHTE', 'OP', 23, 1, NULL),
 ('NACHTRAG_KRV', 'OP', 23, 2, NULL),
