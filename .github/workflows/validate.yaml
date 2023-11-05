@@ -25,9 +25,9 @@ jobs:
           echo "Waiting for PostgreSQL to start..."
           retries=5
           while [ $retries -gt 0 ]; do
+            sleep 5
             docker exec ks-db pg_isready -U kantsearch && break
             retries=$((retries - 1))
-            sleep 10
           done
           if [ $retries -eq 0 ]; then
             echo "PostgreSQL did not become ready in time"
