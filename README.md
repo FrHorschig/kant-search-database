@@ -1,6 +1,6 @@
 ## Docker setup
 
-Install and run `make` to build the docker container with the command provided in the makefile. Make sure you have set the `USER` environment variable to your username. You can start the container by using the `start_all.bash` script from the kant-search repository, or with the following command (replace 'volumes' with the path to your desired mounting point):
+Install and run `make` to build the docker container with the command provided in the makefile. Make sure you have set the `USER` environment variable to your username. You can start the container by using the `start_live_reloading.bash` script from the kant-search repository, or with the following command (replace 'volumes' with the path to your desired mounting point):
 
 ```
 docker run --rm \
