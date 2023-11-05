@@ -1,0 +1,54 @@
+name: Publish
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: build database container
+        run: make
+      - name: start database container
+        run: |
+          docker run -d \
+            -e POSTGRES_USER=kantsearch \
+            -e POSTGRES_PASSWORD=kantsearch \
+            -e POSTGRES_DB=kantsearch \
+            --name ks-db \
+            ghcr.io/frhorschig/kant-search-database:latest
+      - name: wait for PostgreSQL to be ready
+        run: |
+          echo "Waiting for PostgreSQL to start..."
+          retries=5
+          while [ $retries -gt 0 ]; do
+            sleep 5
+            docker exec ks-db pg_isready -U kantsearch && break
+            retries=$((retries - 1))
+          done
+          if [ $retries -eq 0 ]; then
+            echo "PostgreSQL did not become ready in time"
+            exit 1
+          fi
+
+      - name: validate migrations
+        run: |
+          output=$(docker exec ks-db psql \
+            -U kantsearch \
+            -d kantsearch \
+            -t -c "SELECT code FROM works WHERE volume_id = 23 AND ordinal = 28;")
+          if [[ $output =~ 'BERICHTIGUNG' ]]; then
+            echo "validation passed."
+          else
+            echo "validation failed."
+            exit 1
+          fi
+
+      - name: Stop and remove the container
+        if: always()
+        run: |
+          docker stop ks-db
+          docker rm ks-db
