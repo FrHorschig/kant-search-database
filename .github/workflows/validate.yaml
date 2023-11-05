@@ -14,7 +14,7 @@ jobs:
         run: make
       - name: start database container
         run: |
-          docker run --rm \
+          docker run \
             -e POSTGRES_USER=kantsearch \
             -e POSTGRES_PASSWORD=kantsearch \
             -e POSTGRES_DB=kantsearch \
