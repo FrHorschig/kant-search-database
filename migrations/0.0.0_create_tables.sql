@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS volumes (
 CREATE TABLE IF NOT EXISTS works (
     id SERIAL PRIMARY KEY,
     code VARCHAR NOT NULL UNIQUE,
+    abbreviation VARCHAR,
     ordinal INTEGER NOT NULL,
     year VARCHAR,
     volume_id INTEGER NOT NULL,
