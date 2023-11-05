@@ -1,6 +1,5 @@
 CREATE TABLE IF NOT EXISTS volumes (
     id INTEGER PRIMARY KEY,
-    code VARCHAR NOT NULL,
     section INTEGER NOT NULL
 );
 

@@ -1,4 +1,4 @@
-INSERT INTO volumes(id, code, section) VALUES 
+INSERT INTO volumes(id, section) VALUES 
 (1, 1),
 (2, 1),
 (3, 1),
@@ -9,13 +9,13 @@ INSERT INTO volumes(id, code, section) VALUES
 (8, 1),
 (9, 1);
 
-INSERT INTO volumes(id, code, section) VALUES 
+INSERT INTO volumes(id, section) VALUES 
 (10, 2),
 (11, 2),
 (12, 2),
 (13, 2);
 
-INSERT INTO volumes(id, code, section) VALUES 
+INSERT INTO volumes(id, section) VALUES 
 (14, 3),
 (15, 3),
 (16, 3),
@@ -40,7 +40,7 @@ INSERT INTO works(code, volume_id, ordinal, year) VALUES
 ('FBZE', 1, 8, '1756'),
 ('MON_PH', 1, 9, '1756'),
 ('TW', 1, 10, '1756'),
-('INTRO_1', NULL, 1, 11, NULL);
+('INTRO_1', 1, 11, NULL);
 
 INSERT INTO works(code, volume_id, ordinal, year) VALUES 
 ('EACG', 2, 0, '1757'),
@@ -113,7 +113,7 @@ INSERT INTO works(code, volume_id, ordinal, year) VALUES
 ('NACHSCHRIFT_WOERTERBUCH', 8, 26, '1800'),
 ('NACHTRAG_8', 8, 27, NULL),
 ('REZ_SILBERSCHLAG_8', 8, 28, '1764'),
-('ANHANG_8', NULL, 8, 29, NULL),
+('ANHANG_8', 8, 29, NULL),
 ('REZ_ULRICH', 8, 30, '1788');
 
 INSERT INTO works(code, volume_id, ordinal, year) VALUES 
