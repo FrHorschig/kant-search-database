@@ -4,13 +4,12 @@ Install and run `make` to build the docker container with the command provided i
 
 ```
 docker run --rm \
-    -u "$USER" \
     -v "$(pwd)"/volumes:/var/lib/postgresql/data \
     -e POSTGRES_USER=kantsearch \
     -e POSTGRES_PASSWORD=kantsearch \
     -e POSTGRES_DB=kantsearch \
     -p 5432:5432 \
-    kant-search-database
+    ghcr.io/frhorschig/kant-search-database:latest
 ```
 
 ## Versioning
