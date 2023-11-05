@@ -1,13 +1,12 @@
 CREATE TABLE IF NOT EXISTS volumes (
     id INTEGER PRIMARY KEY,
-    title VARCHAR NOT NULL,
+    code VARCHAR NOT NULL,
     section INTEGER NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS works (
     id SERIAL PRIMARY KEY,
-    title VARCHAR NOT NULL UNIQUE,
-    abbreviation VARCHAR,
+    code VARCHAR NOT NULL UNIQUE,
     ordinal INTEGER NOT NULL,
     year VARCHAR,
     volume_id INTEGER NOT NULL,
