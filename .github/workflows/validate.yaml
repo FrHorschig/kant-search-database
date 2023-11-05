@@ -13,12 +13,12 @@ jobs:
       - name: build database container
         run: make
       - name: start database container
-        run: >
-          docker run --rm
-            -e POSTGRES_USER=kantsearch
-            -e POSTGRES_PASSWORD=kantsearch
-            -e POSTGRES_DB=kantsearch
-            --name ks-db
+        run: |
+          docker run --rm \
+            -e POSTGRES_USER=kantsearch \
+            -e POSTGRES_PASSWORD=kantsearch \
+            -e POSTGRES_DB=kantsearch \
+            --name ks-db \
             ghcr.io/frhorschig/kant-search-database:latest
       - name: wait for PostgreSQL to be ready
         run: |
