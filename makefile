@@ -3,5 +3,5 @@
 build:
 	docker build \
 		-f ./deployment/Dockerfile \
-		-t ghcr.io/frhorschig/kant-search-database \
+		-t ghcr.io/frhorschig/kant-search-database:latest \
 		.
