@@ -63,10 +63,10 @@ INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES
 ('AP', 'AP', 2, 17, '1776-1777');
 
 INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
-('KRV_B', 'B', 3, 0, '1787');
+('KRV_B', 'KrV B', 3, 0, '1787');
 
 INSERT INTO works(code, abbreviation, volume_id, ordinal, year) VALUES 
-('KRV_A', 'A', 4, 0, '1781'),
+('KRV_A', 'KrV A', 4, 0, '1781'),
 ('PROL', 'Prol', 4, 1, '1783'),
 ('GMS', 'GMS', 4, 2, '1785'),
 ('MAN', 'MAN', 4, 3, '1786');
