@@ -3,6 +3,7 @@ ADD COLUMN search tsvector DEFAULT to_tsvector('german', '');
 CREATE INDEX paragraphs_search_idx ON paragraphs USING GIN (search);
 CREATE OR REPLACE FUNCTION content_trigger() RETURNS trigger AS $$
 BEGIN
+-- remove formatting (HTML tags) and pagination information ({...}) when inserting content
   NEW.search := to_tsvector('german', 
                 regexp_replace(
                   regexp_replace(NEW.content, '<\/?[^>]*>', '', 'g'), 
@@ -19,6 +20,7 @@ ADD COLUMN search tsvector DEFAULT to_tsvector('german', '');
 CREATE INDEX sentences_search_idx ON sentences USING GIN (search);
 CREATE OR REPLACE FUNCTION content_trigger() RETURNS trigger AS $$
 BEGIN
+-- remove formatting (HTML tags) and pagination information ({...}) when inserting content
   NEW.search := to_tsvector('german', 
                 regexp_replace(
                   regexp_replace(NEW.content, '<\/?[^>]*>', '', 'g'), 
