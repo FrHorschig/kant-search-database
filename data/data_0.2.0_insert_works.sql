@@ -1,0 +1,28 @@
+INSERT INTO volumes(id, section) VALUES
+(1, 1),
+(2, 1),
+(3, 1),
+(4, 1),
+(5, 1),
+(6, 1),
+(7, 1),
+(8, 1),
+(9, 1);
+
+INSERT INTO volumes(id, section) VALUES
+(10, 2),
+(11, 2),
+(12, 2),
+(13, 2);
+
+INSERT INTO volumes(id, section) VALUES
+(14, 3),
+(15, 3),
+(16, 3),
+(17, 3),
+(18, 3),
+(19, 3),
+(20, 3),
+(21, 3),
+(22, 3),
+(23, 3);
