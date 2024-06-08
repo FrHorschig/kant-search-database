@@ -1,13 +1,12 @@
 name: Publish
 
 on:
-  pull_request:
-    branches: [main]
-    types: [closed]
+  push:
+    tags:
+      - "*"
 
 jobs:
   publish:
-    if: github.event.pull_request.merged
     runs-on: ubuntu-latest
     env:
       OWNER: ${{ github.repository_owner }}
@@ -18,7 +17,6 @@ jobs:
       - name: adjust env variables
         run: |
           echo "OWNER=$(echo $OWNER | awk '{print tolower($0)}')" >> $GITHUB_ENV
-          echo "VERSION=$(.github/scripts/extract_version.sh migrations)" >> $GITHUB_ENV
       - name: build Docker image
         run: make
 
@@ -31,7 +29,7 @@ jobs:
       - name: publish docker image
         run: |
           img=ghcr.io/${{ env.OWNER }}/${{ env.REPO_NAME }}
-          version=${{ env.VERSION }}
+          version=${{ github.ref_name }}
           docker tag  $img $img:$version
           docker tag  $img $img:latest
           docker push $img:$version
