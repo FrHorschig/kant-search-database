@@ -31,7 +31,7 @@ docker run -d \
 
 ## Development
 
-To simplify the application, the volumes with their numbers and the works with their abbreviations are inserted into the database via SQL scripts in the `data` directory.
+To simplify the application, the volumes with their numbers and the works with their abbreviations are inserted into the database via SQL scripts in the `data` directory. Simple consecutive numbers are used to keep the order of these data scripts.
 
 ### Development setup
 
