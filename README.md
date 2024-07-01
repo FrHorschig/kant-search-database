@@ -1,8 +1,6 @@
 # KantSearchDatabase
 
-This repository provides code for the PostgreSQL database of the kant-search project. The tables created by the migration files are used to store the texts of Kants work ordered by the volumes of the Akademie-Ausgabe of the works of Immanuel Kant.
-
-The PostgreSQL [full-text search feature](https://www.postgresql.org/docs/current/textsearch.html) is used to search the texts, the migration files also create triggers for generating the search indices.
+This repository provides code for the PostgreSQL database of the kant-search project. The texts of Kants works are stored in tables in the order of the Akademie-Ausgabe. To search the texts we use the PostgreSQL [full-text search feature](https://www.postgresql.org/docs/current/textsearch.html).
 
 ## Contributing
 
